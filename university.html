@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Universities & Tech Courses | Tech UniGuide</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Explore the best universities offering tech courses in Sierra Leone. Find programs like Software Engineering, Computer Science, and Information Systems.">
+  <meta name="keywords"
+    content="universities in Sierra Leone, tech courses, software engineering, computer science, information systems, private universities, government universities">
+  <meta name="author" content="Tech UniGuide">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/university.css">
+  <link rel="icon" href="assets/tech-unigide.jpg">
+
+  <!-- Box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+                <!-- ======================================= Header ========================================== -->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">
+        <img class="logo-img" src="./assets/tech-unigide.jpg" alt="Tech Uniguide logo" />
+        <h1 id="logo-text">Tech UniGuide</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="university.html">Universities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-btn">
+        <button id="theme-toggle"></button>
+        <button class="hamburger">
+          <i class="bx bx-menu"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div class="heading">
+      <h1>Explore Universities & Tech Courses in Sierra Leone</h1>
+      <p>Find the best universities offering tech programs and more information to guide your academic journey.</p>
+    </div>
+
+                <!-- ================================== Search and Filter Section ============================ -->
+
+                <!-- ================================== Filter by Location ============================ -->
+    <section class="filter-section" aria-label="Filter Universities by Location, Course, and Type">
+      <select id="location-filter" aria-labelledby="location-filter">
+        <option value="">Filter by Location</option>
+        <option value="freetown">Freetown</option>
+        <option value="bo">Bo</option>
+        <option value="makeni">Makeni</option>
+        <option value="kenema">Kenema</option>
+        <option value="mile 91">Mile 91</option>
+      </select>
+
+                <!-- ================================= Filter by Course ===================================== -->
+      <select id="course-filter" aria-labelledby="course-filter">
+        <option value="">Filter by Course</option>
+        <option value="software engineering">Software Engineering</option>
+        <option value="computer science">Computer Science</option>
+        <option value="information systems">Information Systems</option>
+        <option value="Business Information Technology">Business Information Technology</option>
+        <option value="Data science">Data Science</option>
+      </select>
+
+                <!-- ==================================== Filter by Type ===================================== -->
+      <select id="type-filter" aria-labelledby="type-filter">
+        <option value="">Filter by Type</option>
+        <option value="government">Government</option>
+        <option value="private">Private</option>
+      </select>
+
+      <button id="filter-btn">Apply Filter</button>
+    </section>
+
+                <!-- ================================ University Listing Section ============================ -->
+
+    <section class="university-list" aria-label="List of Universities">
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>Central University</h2>
+        <p><strong>Location:</strong> Mile 91</p>
+        <p><strong>Type:</strong> Private</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Information Technology</li>
+          <li>Computer Science</li>
+          <li>Business Information Technology</li>
+          <li>Digital Marketing</li>
+          <li>Data Science</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/central.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://central.edu.sl/web/all-courses/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>Limkokwing University </h2>
+        <p><strong>Location:</strong> Freetown</p>
+        <p><strong>Type:</strong> Private</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Software Engineering</li>
+          <li>Information Technology</li>
+          <li>Business Information Technology</li>
+          <li>Information & Communication Technology</li>
+          <li>Digital Media</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/linkok.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://www.limkokwing.net/sierra_leone/about/campus/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>Njala University</h2>
+        <p><strong>Location:</strong> Bo</p>
+        <p><strong>Type:</strong> Government</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Cyber Security</li>
+          <li>Computer Science</li>
+          <li>Information Systems</li>
+          <li>Business Information Technology</li>
+          <li>Data Science</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/njala.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://njala.edu.sl/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>University of Makeni (UNIMAK)</h2>
+        <p><strong>Location:</strong> Makeni</p>
+        <p><strong>Type:</strong> Private</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Computer Science</li>
+          <li>Business Information Technology</li>
+          <li>Information Systems</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/unimak.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://unimak.edu.sl/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="">
+        </div>
+        <h2>Ernest Bai Koroma University (EBK)</h2>
+        <p><strong>Location:</strong> Makeni</p>
+        <p><strong>Type:</strong> Private</p>
+        <ul>
+          <p><strong>Tech Courses:</strong>
+            <li>Business Information Technology</li>
+            <li>Information Systems</li>
+            <li>Information Technology</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/ebk.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://www.ebkustsl.edu.sl/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="">
+        </div>
+        <h2>University of Management and Technology (UNIMTEC)</h2>
+        <p><strong>Location:</strong> Freetown</p>
+        <p><strong>Type:</strong> Private</p>
+        <ul>
+          <p><strong>Tech Courses:</strong>
+            <li>Information Technology</li>
+            <li>Computer Science</li>
+            <li>Business Information Technology</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/unimtec.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://unimtech.edu.sl/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>Sky Vision College</h2>
+        <p><strong>Location:</strong> Freetown</p>
+        <p><strong>Type:</strong> Private</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Information Technology</li>
+          <li>Computer Science</li>
+          <li>Information Systems</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/svc.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://skyvisioncollege.com/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>Blue Crest College</h2>
+        <p><strong>Location:</strong> Freetown</p>
+        <p><strong>Type:</strong> Private</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Computer Science</li>
+          <li>Business Information Technology</li>
+          <li>Digital Media</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="universities/blucrest.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://bluecrest.edu.sl/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>Eastern Technical Institute</h2>
+        <p><strong>Location:</strong> Kenema</p>
+        <p><strong>Type:</strong> Government</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Software Engineering</li>
+          <li>Computer Science</li>
+          <li>Information Systems</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="./universities/ets.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://www.etusl.edu.sl/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="university-card">
+        <div class="university-logo">
+          <img src="assets/ahmed.png" alt="Njala University logo">
+        </div>
+        <h2>Institute of Public Admistration & Management (IPAM)</h2>
+        <p><strong>Location:</strong> Freetown</p>
+        <p><strong>Type:</strong> Government</p>
+        <ul>
+          <p><strong>Tech Courses:</strong></p>
+          <li>Business Information Technology</li>
+          <li>Information Technology</li>
+        </ul>
+        <div class="uniCard-action-btn">
+          <a href="./universities/ipam.html">Learn More</a>
+          <div class="webpage">
+            <i class="bx bx-globe"></i>
+            <a href="https://usl.edu.sl/institute-of-public-administration-and-management-ipam/" target="_blank">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+  <!-- ============================ Footer ============================ -->
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <span class="logo_name">Tech UniGuide</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/profile.php?id=100070279923303"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/techinspiresl?igsh=YmFvaDByejJ3NmNy"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/tech-inspire-sl/?viewAsMember=true"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <img src="assets/tech-unigide.jpg" width="180" alt="" />
+          <p style="color:black">
+            Inspiring the Next Generation of Tech Innovators
+          </p>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Tech UniGuide</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">How to reach us</li>
+          <li>
+            <p><i class="bx bx-map"></i> Lungi/Freetown</p>
+          </li>
+          <li>
+            <p><i class="bx bx-phone"></i> +232 74522500</p>
+            <p><i class="bx bx-phone"></i> +232 74522500</p>
+          </li>
+          <li>
+            <p><i class="bx bxl-gmail"></i> info@techuniguide.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="#">techuniguide</a>All rights
+          reserved</span>
+        <span class="policy_terms">
+          <a href="#">Support Us</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/university.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
