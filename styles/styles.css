@@ -174,7 +174,7 @@ header a:hover {
   color: var(--text-color);
   background: var(--button-color);
   border-radius: 0.2rem;
-[O}
+}
 
 .hamburger i:hover {
   background: (var(--button-hover-color));
