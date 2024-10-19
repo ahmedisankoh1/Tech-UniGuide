@@ -1,0 +1,85 @@
+/* Main Content Styles */
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--extra-bg);
+    background-image: url(../assets/light_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    color: #004080;
+}
+
+.heading p {
+    font-size: 18px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* University details section */
+.university-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.university-logo img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.university-info h2 {
+    color: var(--border-color);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.university-info h3 {
+    color: var(--secondary-text-color);
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.university-info p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--secondary-text-color);
+}
+
+.university-info ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.university-info ul li {
+    margin-bottom: 8px;
+}
+
+.apply-btn {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.apply-btn:hover {
+    background-color: #0066cc;
+}
