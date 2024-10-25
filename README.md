@@ -61,10 +61,11 @@ git commit -m 'Commit message'
 git push origin feature/YourFeature
 ```
 5. Open a pull request.
+
 ## License
 This project is not currently licensed.
 
-##Acknowledgments
+## Acknowledgments
 Thank you to all the future contributors and supporters of Tech UniGuide.
 Inspired by the need for accessible educational resources in the tech field.
 Special thanks to *** ALX*** and ***Holberton University***  that promote technology education.
