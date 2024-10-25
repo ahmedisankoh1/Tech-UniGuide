@@ -116,9 +116,22 @@
 
   <script>
     document.getElementById('contactForm').addEventListener('submit', function (event) {
-      // Prevent form from submitting if validation fails
-      if (!validateForm()) {
-        event.preventDefault(); // Stop form submission
+      event.preventDefault(); // Prevent the default form submission behavior
+
+      if (validateForm()) {
+        // Get the form values
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Create the WhatsApp message content
+        const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+
+        // WhatsApp URL for sending a message to +23233770612
+        const whatsappURL = `https://wa.me/23233770612?text=${whatsappMessage}`;
+
+        // Open WhatsApp with the pre-filled message
+        window.open(whatsappURL, '_blank');
       }
     });
 
