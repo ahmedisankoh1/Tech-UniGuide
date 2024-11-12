@@ -1,0 +1,58 @@
+.dashboard-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #004080;
+  width: 75%;
+  z-index: 3;
+  color: white;
+}
+
+.dashboard-navbar .navbar-logo {
+  display: flex;
+  flex-direction:row;
+  justify-content: left;
+  width: 30%;
+}
+.dashboard-navbar .navbar-logo p {
+  font-size: 40px;
+  
+}
+
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.dashboard-navbar-logo a {
+  color: white;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dashboard-navbar-logo span {
+  color: var(--highlight-color);
+}
+
+.dashboard-navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+.profile_pic {
+  width: 100px;
+  height: 90px;
+  border-radius: 200px;
+}
+
+.dashboard-navbar-links a {
+  color: white;
+  text-decoration: none;
+}

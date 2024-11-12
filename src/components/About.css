@@ -1,0 +1,114 @@
+/* src/components/About.css */
+:root {
+  --background-color: #f0f4f8;
+  --primary-color: #004080;
+  --secondary-color: #003060;
+  --highlight-color: #ffcc00;
+  --text-color-dark: #666;
+  --text-color-light: #eee;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --card-background: rgba(255, 255, 255, 0.2);
+  --card-border: rgba(255, 255, 255, 0.3);
+
+  /* Padding Variables for Different Screen Sizes */
+  --padding-small: 10px;
+  /* For mobile devices */
+  --padding-medium: 20px;
+  /* For tablets */
+  --padding-large: 10rem 10rem;
+  /* For desktop */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: var(--background-color);
+  color: #003060;
+  padding: var(--padding-large);
+}
+
+.about-container .contents {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  /* padding: 40px 20px; */
+  background-color: var(--background-color);
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+  /* Medium gray for general text */
+}
+
+.about-highlights {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  /* Limits the width of the highlight section */
+  flex-wrap: wrap;
+}
+
+.highlight img {
+  width: 100%;
+}
+
+.highlight .about-icon {
+  font-size: 5rem;
+  padding: 0.5rem;
+  /* border: 2px solid var(--primary-color); */
+  /* border-radius:50% */
+}
+
+.highlight {
+  /* border: 1px solid var(--secondary-color); */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex: 1 1 20%;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateX(-8px);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.highlight:hover .about-icon {
+  color: #003060;
+  color: #ffcc00;
+}
+
+.highlight h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.highlight p {
+  font-size: 1rem;
+  color: #666;
+  /* Lighter gray for highlight text */
+}

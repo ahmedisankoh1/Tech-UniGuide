@@ -1,0 +1,49 @@
+/* src/components/Navbar.css */
+.navbar {
+  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #004080;
+  background-color: #00408033;
+  background-color: var(--background-color);
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 10;
+  color: white;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar-logo a {
+  color: white;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar-logo span{
+  color: var(--highlight-color);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #ffcc00;
+  /* Hover color */
+}

@@ -1,0 +1,10 @@
+.main-content{
+  background: var(--background-color);
+  width: 100%;
+  margin: 1rem;
+  padding:2rem;
+  margin-top: 7rem;
+border-radius:0.5rem;
+height:fit-content;
+/* background-color: rebeccapurple; */
+}
