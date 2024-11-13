@@ -1,5 +1,3 @@
-// src/components/Navbar.jsx
-// import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -16,21 +14,19 @@ function Navbar() {
         <li>
           <a href="#about">About</a>
         </li>
+
         <li>
           <a href="#services">Services</a>
         </li>
-        <li>
-          <a href="#faq">FAQ</a>
-        </li>
-        <li>
-          <a href="#feedback">Feedback</a>
-        </li>
+        
         <li>
           <Link to="/Login">{"Login"}</Link>
         </li>
+
         <li>
           <Link to="/Signup">{"Signup"}</Link>
         </li>
+
       </ul>
     </nav>
   );

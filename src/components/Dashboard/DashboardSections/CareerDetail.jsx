@@ -1,5 +1,4 @@
-// src/components/Dashboard/DashboardSections/CareerDetail.jsx
-import { FaArrowAltCircleLeft } from "react-icons/fa";
+// import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -49,59 +48,60 @@ function CareerDetail() {
       futureOutlook:
         "Stable demand with opportunities in emerging technologies and renewable energy.",
     },
-    healthcare: {
-      title: "Healthcare",
+    "information-technology": {
+      title: "Information Technology",
       description:
-        "Healthcare focuses on the maintenance and improvement of physical and mental health through medical services. It includes various professions dedicated to diagnosis, treatment, and prevention of illnesses.",
-      jobOpportunities: ["Doctor", "Nurse", "Pharmacist"],
-      skills: ["Empathy", "Medical Knowledge", "Communication"],
+        "Information Technology (IT) is the study and management of computer systems, networks, and databases. It focuses on supporting, managing, and securing the infrastructure that organizations rely on to store, process, and share information.",
+      jobOpportunities:["IT Specialist", "Network Administrator", "Technical Support Engineer"],
+      skills: ["Basic Computer Knowledge (OS, MS Office)", "Problem-Solving Abilities", "Basic Mathematices"],
       workingAreas: ["Hospitals", "Clinics", "Pharmaceuticals"],
       educationalPath:
         "Typically requires relevant degrees and certifications. For example, doctors need a medical degree and residency training.",
       salaryRange: "$50,000 - $200,000",
-      notableCompanies: ["Mayo Clinic", "Johns Hopkins Medicine", "Pfizer"],
+      notableCompanies: ["Tesla", "Facebook", "Google"],
       futureOutlook:
-        "High demand due to ongoing health challenges and an aging population.",
+        "Steady demand as businesses and organizations increasingly rely on technology infrastructure.",
     },
-    business: {
-      title: "Business",
+    "BIT": {
+      title: "Business Information Technology",
       description:
-        "Business involves the organization and management of resources to achieve economic goals. It covers various domains such as finance, marketing, and entrepreneurship.",
-      jobOpportunities: ["Business Analyst", "Entrepreneur", "Consultant"],
-      skills: ["Leadership", "Strategic Thinking", "Financial Acumen"],
+        "Business Information Technology blends IT with business management. It focuses on using technology to improve business processes, solve organizational problems, and enhance decision-making through data and technology-driven strategies.",
+      jobOpportunities: ["Business Analyst", "IT Consultant", "Project Manager"],
+      skills: ["Analytical Thinking", "Basic Understanding of Business Concepts", "Interest in Technology and Business"],
       workingAreas: ["Corporate", "Startups", "Consulting"],
       educationalPath:
         "Typically requires a Bachelor's degree in Business Administration or a related field. MBA is often preferred for higher roles.",
       salaryRange: "$55,000 - $150,000",
-      notableCompanies: ["Goldman Sachs", "McKinsey & Company", "Apple"],
+      notableCompanies: ["Deloitte", "Oracle", "Apple"],
       futureOutlook:
-        "Growing opportunities with a focus on innovation and digital transformation.",
+      "Growing demand as companies look to align technology with business strategies and efficiencies."
     },
-    art: {
-      title: "Art",
+
+    "data-science": {
+      title: "Data Science",
       description:
-        "Art encompasses the creation of visual, auditory, or performance pieces that express imaginative or technical skill. It includes disciplines like painting, sculpture, music, and film.",
-      jobOpportunities: ["Graphic Designer", "Illustrator", "Art Director"],
-      skills: ["Creativity", "Visual Communication", "Design Principles"],
+        "Data Science is the study of extracting insights and knowledge from data. It involves using statistical methods, machine learning, and programming to analyze data, make predictions, and drive decision-making.",
+      jobOpportunities: ["Data Scientist", "Data Analyst", "Machine Learning Engineer"],
+      skills: ["Basic Statistics and Probability", "Data Interpretation Skills (working with tables, graphs)", "Interest in Problem Solving"],
       workingAreas: ["Advertising", "Media", "Publishing"],
       educationalPath:
         "Typically requires a degree in Fine Arts, Graphic Design, or a related field. Portfolio is often crucial.",
       salaryRange: "$40,000 - $90,000",
-      notableCompanies: ["Pixar", "Disney", "Adobe"],
+      notableCompanies: ["Amazon", "IBM", "Facebook"],
       futureOutlook:
-        "Steady demand with opportunities in digital media and creative industries.",
+      "High demand for data-driven decision-making, with growth in AI and machine learning applications."
     },
 
-    cybersecurity: {
+    "cybersecurity": {
       title: "Cybersecurity",
       description:
-        "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. It involves safeguarding sensitive data from breaches and ensuring the integrity and confidentiality of information.",
+        "Cyber Security is the practice of protecting systems, networks, and data from digital attacks. It involves understanding security principles, identifying vulnerabilities, and implementing strategies to prevent, detect, and respond to cyber threats.",
       jobOpportunities: [
         "Cybersecurity Analyst",
         "Security Consultant",
         "Penetration Tester",
       ],
-      skills: ["Network Security", "Risk Management", "Ethical Hacking"],
+      skills: ["Problem-Solving Mindset", "Attention to Detail", "Basic Understanding of Internet Safety"],
       workingAreas: ["Technology", "Finance", "Government"],
       educationalPath:
         "Typically requires a Bachelor's degree in Cybersecurity, Information Technology, or a related field. Certifications such as CISSP are highly valued.",
@@ -110,20 +110,17 @@ function CareerDetail() {
       futureOutlook:
         "High demand with increasing importance of data security in all sectors.",
     },
-    "environmental-science": {
-      title: "Environmental Science",
+    "information-systems": {
+      title: "Information Systems",
       description:
-        "Environmental Science integrates physical, biological, and information sciences to study and manage the environment. It aims to understand and solve environmental problems.",
+        "Information Systems focuses on the use and management of information technology within organizations. It involves designing and implementing systems to collect, process, and store information to support business operations and decision-making.",
       jobOpportunities: [
-        "Environmental Scientist",
-        "Sustainability Consultant",
-        "Conservation Specialist",
+        "Cybersecurity Analyst",
+        "Security Consultant",
+        "Penetration Tester",
+        "Ethical Hacker",
       ],
-      skills: [
-        "Environmental Analysis",
-        "Sustainability Practices",
-        "Field Research",
-      ],
+      skills: ["Problem-Solving Mindset", "Attention to Detail", "Basic Understanding of Internet Safety"],
       workingAreas: ["Research", "Government", "Non-Profits"],
       educationalPath:
         "Typically requires a Bachelor's degree in Environmental Science or a related field. Advanced roles may require a Master's or PhD.",
@@ -134,7 +131,7 @@ function CareerDetail() {
         "Greenpeace",
       ],
       futureOutlook:
-        "Growing importance due to climate change and environmental protection efforts.",
+        "Strong demand as businesses need effective information management systems.",
     },
     "digital-marketing": {
       title: "Digital Marketing",
@@ -154,15 +151,48 @@ function CareerDetail() {
       futureOutlook:
         "High demand as digital presence becomes crucial for all businesses.",
     },
+    "digital-media": {
+      title: "Digital Media",
+      description:
+        "Digital Media focuses on creating and managing digital content, including graphics, videos, and animations. It combines art and technology to communicate visually across various platforms, including websites, social media, and multimedia channels.",
+      jobOpportunities: [
+        "Digital Content Creator",
+        "Multimedia Designer",
+        "Content Strategist",
+      ],
+      skills: ["Creative Design Thinking", "Basic Graphic Design Tools", "Understanding of Social Media"],
+      workingAreas: ["Advertising", "E-commerce", "Consulting"],
+      educationalPath:
+        "Typically requires a degree in Marketing, Communications, or a related field. Practical experience and certifications are also valuable.",
+      salaryRange: "$45,000 - $100,000",
+      notableCompanies: ["Disney", "Adobe", "Buzz"],
+      futureOutlook:
+        "Strong demand as digital content and social media continue to grow across industries.",
+    },
+    "ICT": {
+      title: "Information and Communication Technology",
+      description:
+        "Information & Communication Technology (ICT) combines information technology with communication tools to manage, store, and transmit data. It covers areas such as telecommunications, networking, and the integration of digital tools in communication.",
+      jobOpportunities: [
+        "Network Engineer",
+        "ICT Manager",
+        "Telecom Specialist",
+      ],
+      skills: ["Basic Networking Concepts ", "Problem-Solving Abilities", "Interest in Communication Tools"],
+      workingAreas: ["Advertising", "E-commerce", "Consulting"],
+      educationalPath:
+        "Typically requires a degree in Marketing, Communications, or a related field. Practical experience and certifications are also valuable.",
+      salaryRange: "$45,000 - $100,000",
+      notableCompanies: ["Disney", "Adobe", "Buzz"],
+      futureOutlook:
+        "Strong demand as digital content and social media continue to grow across industries.",
+    },
   };
 
   const career = careerData[careerId];
 
   const navigate = useNavigate();
 
-  const handleBack = () => {
-    navigate(`/dashboard/careers`);
-  };
   
   // Effect to scroll to the top when the component mounts
   useEffect(() => {
@@ -173,10 +203,6 @@ function CareerDetail() {
     <div className="career-detail-page">
       <Sidebar />
       <div className="career-detail-container">
-        {/* <button onClick={() => handleBack()} className="backBtn">
-          <FaArrowAltCircleLeft />
-          Back
-        </button>{" "} */}
         {career ? (
           <>
             <h1>{career.title}</h1>

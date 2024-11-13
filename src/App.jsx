@@ -1,4 +1,3 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,14 +6,11 @@ import About from "./components/About";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard/Dashboard";
-// import "./App.css";
 import CareerDetail from "./components/Dashboard/DashboardSections/CareerDetail";
 import Universities from "./components/Dashboard/DashboardSections/Universities";
 import UniversityDetail from "./components/Dashboard/DashboardSections/UniversityDetail";
+// import "./App.css";
 
-// Inside your Routes component
-
-// Inside your Routes
 function App() {
   return (
     <Router>
@@ -50,7 +46,6 @@ function App() {
           element={
             <>
               <Navbar />
-              {/* <FAQ /> */}
               <Footer />
             </>
           }

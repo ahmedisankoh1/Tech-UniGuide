@@ -1,6 +1,5 @@
-// src/components/UniversityDetail.jsx
+// import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { useEffect } from "react";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { useNavigate, useParams } from "react-router-dom";
 import universities from "../../../data/universitiesData";
 import Sidebar from "../Sidebar";
@@ -12,30 +11,22 @@ function UniversityDetail() {
     const { universityId } = useParams();
     const university = universities.find((uni) => uni.id === universityId);
 
-    // Effect to scroll to the top when the component mounts
     useEffect(() => {
-        window.scrollTo(0, 0); // Scrolls to the top of the page
-    }, []); // Empty dependency array means this effect runs once on mount
-
-    const handleLearnMore = () => {
-        navigate(`/dashboard/explore-universities`);
-    };
+        window.scrollTo(0, 0);
+    }, []);
 
     if (!university) return <p>University not found</p>;
 
     return (
         <div className="university-detail-page">
-            {/* <DashboardNavbar /> */}
             <Sidebar />
             <div className="university-detail-container">
-                <button onClick={() => handleLearnMore()} className="backBtn">
-                    <FaArrowAltCircleLeft />
-                    Back
-                </button>{" "}
+                
                 <div className="heading">
                     <h1>{university.name}</h1>
                     <p>{university.description}</p>
                 </div>
+
                 <section className="details">
                     <div className="university-logo">
                         <img
@@ -58,13 +49,6 @@ function UniversityDetail() {
                             ))}
                         </ul>
 
-                        <h3>Available Non-Tech Courses</h3>
-                        <ul className="uni-detail">
-                            {university.nonTechCourses.map((course, index) => (
-                                <li key={index}>{course}</li>
-                            ))}
-                        </ul>
-
                         <h3>Facilities & Features</h3>
                         <ul className="uni-detail">
                             {university.facilities.map((facility, index) => (
@@ -73,6 +57,7 @@ function UniversityDetail() {
                         </ul>
                     </div>
                 </section>
+                
                 <h3>Contact Information</h3>
                 <p>Email: {university.contactInfo.email}</p>
                 <p>Phone: {university.contactInfo.phone}</p>

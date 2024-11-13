@@ -3,13 +3,7 @@ import {
   FaBookOpen,
   FaBriefcase,
   FaWrench,
-  // FaHandshake,
-  // FaChartLine,
-  // FaGift,
-  // FaFacebook,
-  // FaLinkedin,
-  // FaTwitter,
-} from "react-icons/fa"; // Icons for feature highlights
+} from "react-icons/fa";
 
 import React from "react";
 import "./Features.css";

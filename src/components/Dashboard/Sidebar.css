@@ -3,13 +3,11 @@
   height: 100vh;
   background-color: #004080;
   background-color: #ffffff6b;
-  /* background-color: #fff; */
   color: #ffffff;
   width: 250px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* padding: 20px; */
   position: fixed;
   z-index: 20;
 }
@@ -69,7 +67,7 @@
 
 .sidebar ul li a svg {
   margin-right: 10px;
-    transition: all .3s ease;
+  transition: all .3s ease;
   /* background-color: red; */
 }
 

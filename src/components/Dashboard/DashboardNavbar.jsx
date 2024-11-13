@@ -1,20 +1,18 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { FaUser } from "react-icons/fa";
-import { auth, db } from "../firebaseConfig"; // Import your Firebase config
+import { auth, db } from "../firebaseConfig"; 
 import { doc, getDoc } from "firebase/firestore";
-import profile_pic from "../../assets/images/img1.jpg";
 import "./DashboardNavbar.css";
 
 function DashboardNavbar() {
   const [userName, setUserName] = useState("User");
+  const [profilePicUrl, setProfilePicUrl] = useState("");
 
   useEffect(() => {
-    // Get the current authenticated user
+    // Gets the current authenticated user
     const currentUser = auth.currentUser;
 
     if (currentUser) {
-      // Fetch user data from Firestore
       const fetchUserData = async () => {
         try {
           const userDocRef = doc(db, "users", currentUser.uid);
@@ -33,6 +31,11 @@ function DashboardNavbar() {
 
       fetchUserData();
     }
+
+    const storedProfilePic = localStorage.getItem("profilePic");
+    if (storedProfilePic) {
+      setProfilePicUrl(storedProfilePic);
+    }
   }, []);
 
   return (
@@ -45,7 +48,7 @@ function DashboardNavbar() {
       <ul className="dashboard-navbar-links">
         <li>
           <NavLink to="/dashboard/Settings" activeClassName="active">
-            <a href="/dashboard/settings"><img className="profile_pic" src={profile_pic} alt="" /></a>
+            <img className="profile_pic" src={profilePicUrl || "default-image-path"} alt="Profile" />
           </NavLink>
         </li>
       </ul>

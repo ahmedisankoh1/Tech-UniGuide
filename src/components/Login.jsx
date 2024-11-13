@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth } from "./firebaseConfig"; // Import your Firebase configuration
+import { auth } from "./firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import "./Login.css";
 
@@ -20,10 +20,9 @@ function Login() {
     const { email, password } = formData;
 
     try {
-      // Log in with Firebase Authentication
       await signInWithEmailAndPassword(auth, email, password);
       alert("Login successful! Redirecting to your dashboard...");
-      navigate("/dashboard/home"); // Redirect to the dashboard or home page after successful login
+      navigate("/dashboard/home");
     } catch (error) {
       console.error("Error logging in:", error);
       alert("Error logging in, Either your password or email is incorrect");

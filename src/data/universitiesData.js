@@ -12,13 +12,10 @@ const universities = [
     type:
       "Private",
     programs: [
-      "Engineering", "Law", "Medicine", "Business"
+      "Software Engineering", "Digital Media", "Information Technology",
     ],
     techCourses: [
       "Software Engineering", "Graphic Design", "Web Development", "Information Technology"],
-    nonTechCourses: [
-      "Business Management", "Media Studies", "Law"
-    ],
     facilities: [
       "Modern computer labs with the latest software",
       "Creative studios for graphic design and animation",
@@ -80,7 +77,7 @@ const universities = [
   {
     "id": "ipam-university",
     "name": "Institute of Public Administration and Management (IPAM) - (USL)",
-    "logo": "/src/assets/universities/ipam.jpg",
+    "logo": "/src/assets/universities/ipam-logo.jpeg",
     "description": "Specializes in public administration and management studies.",
     "about": "IPAM is a leading institution located in Freetown, Sierra Leone, known for its expertise in public administration and management studies. Our programs are designed to prepare students for leadership roles in the public and private sectors.",
     "location": "Freetown",
@@ -102,7 +99,7 @@ const universities = [
   {
     "id": "university-of-makeni",
     "name": "University of Makeni (UniMak)",
-    "logo": "/src/assets/universities/unimak.jpg",
+    "logo": "/src/assets/universities/unimak-logo.jpeg",
     "description": "Dedicated to creating leaders in various fields, including social sciences and education.",
     "about": "The University of Makeni is a leading institution located in Freetown, Sierra Leone, dedicated to nurturing leaders in social sciences, education, and beyond. Our comprehensive programs aim to equip students with the knowledge and skills for professional success.",
     "location": "Makeni",
@@ -148,7 +145,7 @@ const universities = [
   {
     "id": "bluecrest-college",
     "name": "BlueCrest College Sierra Leone",
-    "logo": "/src/assets/universities/blucrest.jpg",
+    "logo": "/src/assets/universities/bluecrest-logo.jpeg",
     "description": "Offers programs in IT, management, and media studies.",
     "about": "BlueCrest College Sierra Leone is a private institution located in Freetown. The college specializes in providing high-quality education in IT, management, and media studies. Our programs are designed to equip students with the necessary skills to excel in today's competitive job market.",
     "location": "Freetown",
@@ -168,98 +165,6 @@ const universities = [
     },
     "website": "http://bluecrestcollege.sl"
   },
-  // {
-  //   "id": "bluecrest-college",
-  //   "name": "BlueCrest College Sierra Leone",
-  //   "logo": "/src/assets/universities/blucrest.jpg",
-  //   "description": "Offers programs in IT, management, and media studies.",
-  //   "about": "BlueCrest College Sierra Leone is a private institution located in Freetown. The college specializes in providing high-quality education in IT, management, and media studies. Our programs are designed to equip students with the necessary skills to excel in today's competitive job market.",
-  //   "location": "Freetown",
-  //   "type": "Private",
-  //   "programs": ["Information Technology", "Management", "Media Studies"],
-  //   "techCourses": ["Software Engineering", "Graphic Design", "Web Development", "Information Technology"],
-  //   "nonTechCourses": ["Business Management", "Media Studies", "Law"],
-  //   "facilities": [
-  //     "Modern computer labs with the latest software",
-  //     "Creative studios for graphic design and animation",
-  //     "Experienced faculty with industry expertise",
-  //     "On-campus accommodation and a well-resourced library"
-  //   ],
-  //   "contactInfo": {
-  //     "email": "admissions@bluecrestcollege.sl",
-  //     "phone": "+232-XXX-XXX-XXX"
-  //   },
-  //   "website": "http://bluecrestcollege.sl"
-  // },
-  // {
-  //   "id": "unimtech-college",
-  //   "name": "Unimtech College Sierra Leone",
-  //   "logo": "/src/assets/universities/unimtec.jpg",
-  //   "description": "Offers programs in IT, management, and media studies.",
-  //   "about": "BlueCrest College Sierra Leone is a private institution located in Freetown. The college specializes in providing high-quality education in IT, management, and media studies. Our programs are designed to equip students with the necessary skills to excel in today's competitive job market.",
-  //   "location": "Freetown",
-  //   "type": "Private",
-  //   "programs": ["Information Technology", "Management", "Media Studies"],
-  //   "techCourses": ["Software Engineering", "Graphic Design", "Web Development", "Information Technology"],
-  //   "nonTechCourses": ["Business Management", "Media Studies", "Law"],
-  //   "facilities": [
-  //     "Modern computer labs with the latest software",
-  //     "Creative studios for graphic design and animation",
-  //     "Experienced faculty with industry expertise",
-  //     "On-campus accommodation and a well-resourced library"
-  //   ],
-  //   "contactInfo": {
-  //     "email": "admissions@bluecrestcollege.sl",
-  //     "phone": "+232-XXX-XXX-XXX"
-  //   },
-  //   "website": "http://bluecrestcollege.sl"
-  // },
-  // {
-  //   "id": "bluecrest-college",
-  //   "name": "BlueCrest College Sierra Leone",
-  //   "logo": "/src/assets/universities/blucrest.jpg",
-  //   "description": "Offers programs in IT, management, and media studies.",
-  //   "about": "BlueCrest College Sierra Leone is a private institution located in Freetown. The college specializes in providing high-quality education in IT, management, and media studies. Our programs are designed to equip students with the necessary skills to excel in today's competitive job market.",
-  //   "location": "Freetown",
-  //   "type": "Private",
-  //   "programs": ["Information Technology", "Management", "Media Studies"],
-  //   "techCourses": ["Software Engineering", "Graphic Design", "Web Development", "Information Technology"],
-  //   "nonTechCourses": ["Business Management", "Media Studies", "Law"],
-  //   "facilities": [
-  //     "Modern computer labs with the latest software",
-  //     "Creative studios for graphic design and animation",
-  //     "Experienced faculty with industry expertise",
-  //     "On-campus accommodation and a well-resourced library"
-  //   ],
-  //   "contactInfo": {
-  //     "email": "admissions@bluecrestcollege.sl",
-  //     "phone": "+232-XXX-XXX-XXX"
-  //   },
-  //   "website": "http://bluecrestcollege.sl"
-  // },
-  // {
-  //   "id": "bluecrest-college",
-  //   "name": "BlueCrest College Sierra Leone",
-  //   "logo": "/src/assets/universities/blucrest.jpg",
-  //   "description": "Offers programs in IT, management, and media studies.",
-  //   "about": "BlueCrest College Sierra Leone is a private institution located in Freetown. The college specializes in providing high-quality education in IT, management, and media studies. Our programs are designed to equip students with the necessary skills to excel in today's competitive job market.",
-  //   "location": "Freetown",
-  //   "type": "Private",
-  //   "programs": ["Information Technology", "Management", "Media Studies"],
-  //   "techCourses": ["Software Engineering", "Graphic Design", "Web Development", "Information Technology"],
-  //   "nonTechCourses": ["Business Management", "Media Studies", "Law"],
-  //   "facilities": [
-  //     "Modern computer labs with the latest software",
-  //     "Creative studios for graphic design and animation",
-  //     "Experienced faculty with industry expertise",
-  //     "On-campus accommodation and a well-resourced library"
-  //   ],
-  //   "contactInfo": {
-  //     "email": "admissions@bluecrestcollege.sl",
-  //     "phone": "+232-XXX-XXX-XXX"
-  //   },
-  //   "website": "http://bluecrestcollege.sl"
-  // },
 ];
 
 export default universities;

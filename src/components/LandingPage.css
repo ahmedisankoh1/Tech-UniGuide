@@ -1,9 +1,5 @@
-/* src/components/LandingPage.css */
-
-/* display image bg */
 .landing-page-container {
   background-image: url('/src/assets/images/UG_img_T.png');
-  /* background-image: url('/src/assets/BG-Images/UG_bg_image.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -48,7 +44,6 @@
 .landing-hero h1 {
   font-size: 4.5rem;
   color: #003060;
-  /* text-shadow: 0px 0px 10px white; */
 }
 .landing-hero h1 span{
   color: var(--highlight-color);
@@ -117,48 +112,6 @@
   color: #003060;
   color: #ffcc00;
 }
-
-/* 
-.highlight-card:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.highlight-icon {
-  font-size: 2em;
-  color: #004080;
-  color: white;
-  border: 2px solid #003060;
-  border-radius: 50%;
-  padding: 0.5rem;
-  margin-bottom: 10px;
-}
-
-.highlight-card h3 {
-  font-size: 1.2em;
-}
-
-.highlight-card p {
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-.highlight-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.highlight-card button {
-  padding: 10px 20px;
-  background-color: #004080;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-} */
-
 
 .get-started-button {
   background-color: #004080;

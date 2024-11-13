@@ -8,20 +8,15 @@ import "./About.css";
 import "./Features.css";
 import "./Team.css";
 import vision_img from "/src/assets/images/vision.png";
-// import mission_img from "/src/assets/images/mission.png";
-// src/components/LandingPage.jsx
-// import React from "react";
-// import vision_img from "../";
 
 import
-"react-icons/fa"; // Icons for feature highlights
+"react-icons/fa";
 
 function LandingPage() {
   const navigate = useNavigate();
 
   const handleGetStarted = () => {
     navigate("/signup");
-    // Navigate to sign up page
   };
 
   return (
@@ -61,71 +56,40 @@ function LandingPage() {
               <h2 className="team-title">We Helped Them Choose</h2>
             </div>
             <div className="team-member-container">
+
+
               <div className="team-member">
                 <div className="container">
                   <img src={vision_img} alt="" />
                   <h3 className="team-name">Joshua Kajua</h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  aliquam fugit facilis repellat? Cumque, labore. Non
+                  Joshua Kajua is a well known Teacher in Lungi, Sierra Loene and has contributed towards the growth of tech education in the district.
                 </p>
               </div>
+
+
               <div className="team-member">
                 <div className="container">
                   <img src={vision_img} alt="" />
                   <h3 className="team-name">Zainab Kamara</h3>
-                  {/* <h4 className="team-title">Co-Founder -Tech Inspire SL</h4> */}
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  aliquam fugit facilis repellat? Cumque, labore. Non
+                  Zainab Kamara is a born of Lungi, Sierra Leone that has been trying to break the digital devide in rural communities focusing on girl. She has helped alot acheive their dreams in the digital world.
                 </p>
               </div>
+
+
               <div className="team-member">
                 <div className="container">
                   <img src={vision_img} alt="" />
                   <h3 className="team-name">Abdul Aziz</h3>
-                  {/* <h4 className="team-title">Co-Founder -Tech Inspire SL</h4> */}
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  aliquam fugit facilis repellat? Cumque, labore. Non
+                  Abdul Aziz is a well known business man in Lungi, Sierra Leone, he is mainly recognised for the scholarships he offers to students who choose to pursue a career in tech.
                 </p>
               </div>
-              <div className="team-member">
-                <div className="container">
-                  <img src={vision_img} alt="" />
-                  <h3 className="team-name">Mohamed Super Dumbuya</h3>
-                  {/* <h4 className="team-title">Co-Founder -Tech Inspire SL</h4> */}
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  aliquam fugit facilis repellat? Cumque, labore. Non
-                </p>
-              </div>
-              <div className="team-member">
-                <div className="container">
-                  <img src={vision_img} alt="" />
-                  <h3 className="team-name">Mohamed Super Dumbuya</h3>
-                  {/* <h4 className="team-title">Co-Founder -Tech Inspire SL</h4> */}
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  aliquam fugit facilis repellat? Cumque, labore. Non
-                </p>
-              </div>
-              <div className="team-member">
-                <div className="container">
-                  <img src={vision_img} alt="" />
-                  <h3 className="team-name">Mohamed Super Dumbuya</h3>
-                  {/* <h4 className="team-title">Co-Founder -Tech Inspire SL</h4> */}
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  aliquam fugit facilis repellat? Cumque, labore. Non
-                </p>
-              </div>
+
             </div>
           </div>
         </div>

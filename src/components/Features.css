@@ -1,7 +1,6 @@
 .features-section {
   position: relative;
   padding: var(--padding-large);
-  background-image: url('./src/assets/BG-Images/bg4.png');
   background-image: url('../assets/BG-Images/bg4.png');
   background-attachment: fixed;
   background-size: cover;
@@ -26,7 +25,6 @@
 .features-container {
   position: relative;
   z-index: 2;
-  /* max-width: 1200px; */
   text-align: center;
   color: var(--text-color-light);
 }
@@ -38,7 +36,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* gap: 5rem; */
 }
 
 .features-container .contents h2 {
@@ -47,7 +44,6 @@
 
 .features-container .contents p {
   font-size: 1.2rem;
-  /* max-width: 800px; */
   text-align: center;
   margin-bottom: 40px;
 }
@@ -63,16 +59,12 @@
 
 .features-intro {
   font-size: 1.1rem;
-  /* width: 100%; */
   text-align: center;
-  /* margin-bottom: 2rem; */
   max-width: 700px;
-  /* margin: 0 auto; */
 }
 
 .features-grid {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 2rem;
   justify-content: center;
 }
@@ -106,7 +98,6 @@
 .feature-icon {
   font-size: 5rem;
   color: var(--highlight-color);
-  /* margin-bottom: 1rem; */
 }
 
 .feature-title {

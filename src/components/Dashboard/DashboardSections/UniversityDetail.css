@@ -1,7 +1,4 @@
-/* src/components/UniversityDetail.css */
-
 .university-detail-page {
-  /* margin-top: 70px; */
   flex-direction: column;
   background-color: #eff0f3;
   padding: 0;
@@ -39,15 +36,10 @@
 }
 
 .university-detail-logo {
-  max-width: 500px;
-  height: auto;
-  margin: 1rem 0;
-  margin-bottom: 20px;
-}
-
-.university-detail-logo {
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .university-detail-page p {

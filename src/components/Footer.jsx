@@ -1,5 +1,3 @@
-// Footer.jsx
-// import React from "react";
 import {
   FaLinkedin,
   FaFacebook,
@@ -7,12 +5,6 @@ import {
   FaPhone,
   FaInstagram,
   FaYoutube,
-  // FaSignOutAlt,
-  // FaHome,
-  // FaBook,
-  // FaUniversity,
-  // FaToolbox,
-  // FaLayerGroup,
 } from "react-icons/fa";
 
 import { NavLink } from "react-router-dom";
@@ -55,7 +47,7 @@ function Footer() {
               </NavLink>
             </div>
             <p>
-              Your guide to understanding courses and choosing the right career
+              Your guide to understanding tech courses and choosing the right career
               path.
             </p>
           </ul>
@@ -68,28 +60,10 @@ function Footer() {
               <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#faq">FAQ</a>
-            </li>
-            <li>
               <a href="/signup">Sign Up</a>
             </li>
             <li>
               <a href="/login">Login</a>
-            </li>
-          </ul>
-          <ul className="box">
-            <li className="link_name">Dashboard</li>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Courses</a>
-            </li>
-            <li>
-              <a href="">Universities</a>
-            </li>
-            <li>
-              <a href="">Skills</a>
             </li>
           </ul>
           

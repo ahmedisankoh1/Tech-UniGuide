@@ -1,22 +1,15 @@
-// src/components/About.jsx
 import {
-  // FaBookOpen,
-  // FaBriefcase,
-  // FaWrench,
   FaHandshake,
   FaChartLine,
   FaGift,
-  // FaFacebook,
-  // FaLinkedin,
-  // FaTwitter,
-} from "react-icons/fa"; // Icons for feature highlights
+} from "react-icons/fa";
 
 import React from "react";
 import "./About.css";
 
 function About() {
   return (
-   <section className="about-container" id="about">
+    <section className="about-container" id="about">
         <div className="contents">
           <div className="about-header">
             <h2>About Tech UniGuide</h2>

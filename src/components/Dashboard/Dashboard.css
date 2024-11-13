@@ -1,5 +1,3 @@
-/* src/components/Dashboard/Dashboard.css */
-
 .dashboard {
   display: flex;
   min-height: 100vh;
@@ -13,8 +11,6 @@
 
 .main-content h1 {
   color: #003060;
-    /* font-size: 2rem; */
-  /* margin-bottom: 1rem; */
 }
 
 .main-content p {

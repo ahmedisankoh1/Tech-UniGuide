@@ -1,5 +1,4 @@
-// src/components/Services.jsx
-// import React from "react";
+
 import "./Services.css";
 
 function Services() {
@@ -8,7 +7,7 @@ function Services() {
       title: "Personalized Course Guidance",
       description:
         "Get tailored advice to choose the best courses based on your interests and career goals.",
-      icon: "📚", // You can replace these with actual icons
+      icon: "📚",
     },
     {
       title: "Career Development Resources",

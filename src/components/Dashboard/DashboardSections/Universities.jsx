@@ -1,5 +1,3 @@
-// src/components/Universities.jsx
-// import React from "react";
 import universities from "../../../data/universitiesData";
 import { useNavigate } from "react-router-dom";
 import "./Universities.css";

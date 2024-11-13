@@ -1,4 +1,3 @@
-/* src/components/Navbar.css */
 .navbar {
   position: fixed;
   position: absolute;
@@ -45,5 +44,4 @@ ul li {
 
 .navbar-links a:hover {
   color: #ffcc00;
-  /* Hover color */
 }

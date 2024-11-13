@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { auth, db } from "../../firebaseConfig"; // Ensure you have these imports
-import { updateDoc, doc } from "firebase/firestore";
+import { auth, db } from "../../firebaseConfig";
+import { updateDoc, doc, getDoc } from "firebase/firestore";
 import "./Settings.css";
 
 function Settings() {
@@ -9,7 +9,6 @@ function Settings() {
   const [profilePicUrl, setProfilePicUrl] = useState("");
 
   useEffect(() => {
-    // Retrieve stored user data from local storage
     const storedProfilePic = localStorage.getItem("profilePic");
     const currentUser = auth.currentUser;
 
@@ -20,7 +19,7 @@ function Settings() {
         if (userDocSnap.exists()) {
           const userData = userDocSnap.data();
           setName(userData.fullName || "");
-          setProfilePicUrl(storedProfilePic || ""); // Set the image from local storage
+          setProfilePicUrl(storedProfilePic || "");
         }
       };
       fetchUserData();
@@ -35,9 +34,9 @@ function Settings() {
       const reader = new FileReader();
 
       reader.onloadend = () => {
-        setImage(reader.result); // Store Base64 string
-        localStorage.setItem("profilePic", reader.result); // Save the image in local storage
-        setProfilePicUrl(reader.result); // Update state to show the new image
+        const base64String = reader.result;
+        setImage(base64String);
+        setProfilePicUrl(base64String);
       };
       reader.readAsDataURL(file);
     }
@@ -49,12 +48,13 @@ function Settings() {
 
     if (currentUser) {
       try {
-        // Update user name in Firestore
         const userDocRef = doc(db, "users", currentUser.uid);
         await updateDoc(userDocRef, {
           fullName: name,
         });
 
+        localStorage.setItem("profilePic", profilePicUrl);
+        
         alert("Profile updated successfully!");
       } catch (error) {
         console.error("Error updating profile:", error);
@@ -81,13 +81,6 @@ function Settings() {
           Upload Image:
           <input type="file" accept="image/*" onChange={handleImageChange} />
         </label>
-        {profilePicUrl && (
-          <img
-            src={profilePicUrl}
-            alt="Profile"
-            className="profile-picture"
-          />
-        )}
         <button type="submit" className="submit-button">Save Changes</button>
       </form>
     </div>
