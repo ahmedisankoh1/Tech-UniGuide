@@ -31,16 +31,16 @@ function CareerDetail() {
       futureOutlook:
         "Growing demand due to the increasing reliance on technology and data.",
     },
-    engineering: {
-      title: "Engineering",
+    "software-engineering": {
+      title: "Software Engineering",
       description:
-        "Engineering applies scientific principles to design, build, and analyze solutions to technical problems. It encompasses various fields like mechanical, civil, and electrical engineering.",
+        "Software Engineering is the systematic approach to designing, developing, testing, and maintaining software. It combines engineering principles with coding skills to create efficient, reliable, and scalable software solutions.",
       jobOpportunities: [
-        "Mechanical Engineer",
-        "Civil Engineer",
-        "Electrical Engineer",
+        "Software Engineer",
+        "Application Developer",
+        "Quality Assurance Engineer",
       ],
-      skills: ["Critical Thinking", "Mathematics", "Technical Writing"],
+      skills:  ["Problem-Solving Mindset", "Mathematics", "Introductory Programming Knowledge"],
       workingAreas: ["Construction", "Manufacturing", "Energy"],
       educationalPath:
         "Typically requires a Bachelor's degree in Engineering. Specializations may require further education or certification.",
@@ -160,7 +160,7 @@ function CareerDetail() {
 
   const navigate = useNavigate();
 
-  const handleLearnMore = () => {
+  const handleBack = () => {
     navigate(`/dashboard/careers`);
   };
   
@@ -173,10 +173,10 @@ function CareerDetail() {
     <div className="career-detail-page">
       <Sidebar />
       <div className="career-detail-container">
-        <button onClick={() => handleLearnMore()} className="backBtn">
+        {/* <button onClick={() => handleBack()} className="backBtn">
           <FaArrowAltCircleLeft />
           Back
-        </button>{" "}
+        </button>{" "} */}
         {career ? (
           <>
             <h1>{career.title}</h1>
